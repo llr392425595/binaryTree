@@ -149,7 +149,7 @@ class BinaryTree{
 
     static createBinaryTreeByArry(array){
         let binatyTree = new BinaryTree();
-        nodes.forEach(key=>{
+        array.forEach(key=>{
             let newNode = new Node(key)
             binatyTree.insert(newNode)
         })
@@ -157,3 +157,8 @@ class BinaryTree{
     }
 }
 
+
+module.exports = {
+    Node,
+    BinaryTree
+}
